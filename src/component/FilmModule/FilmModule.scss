@@ -1,0 +1,91 @@
+.filmmodule{
+  padding-top:10px;
+  header{
+    padding: 0 1.12rem;
+    h1{
+      display: inline-block;
+      min-width: 4em;
+      margin-bottom: 0;
+      font-size: 18px;
+      color: #111;
+      padding-left: 0;
+      padding-bottom: 0;
+      font-size: 1.06rem;
+    }
+    a{
+      float: right;
+      font-size: .9rem;
+      line-height: 1.5rem;
+    }
+  }
+  .filmbox{
+    ul{
+      border-bottom: 1px solid #F2F2F2;
+      padding: 15px 0 43px 0;
+      font-size: 0;
+      white-space: nowrap;
+      overflow-x: auto;
+      width: 100%;
+      *{
+        font-size: .94rem;
+        white-space: normal;
+      }
+      li:first-of-type{
+        margin-left: 1.12rem;
+      }
+      li{
+        display: inline-block;
+        vertical-align: top;
+        width: 100px;
+        text-align: center;
+        margin-left: 0.48rem;
+        .imgbox{
+          width: 100%;
+          overflow: hidden;
+          background-size: cover;
+          background-position: center;
+        }
+        .imgbox::before{
+          content: "";
+          float: left;
+          margin-top: 142.85714%;
+        }
+        span{
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: block;
+          margin-top: .6rem;
+          line-height: .94rem;
+        }
+        .item-rating{
+          color: #aaa;
+          line-height: .94rem;
+          margin-top: .3rem;
+          font-size: .72rem;
+          .rank{
+            .rating-stars{
+              display: inline-block;
+              vertical-align: middle;
+              .rating-star{
+                display: inline-block;
+                margin-right: 1px;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 10px;
+                background-size: 10px 10px;
+              }
+              .rating-star-full{
+                background-image: url("../../static/movie_light.png");
+              }
+              .rating-star-gray{
+                background-image: url("../../static/movie_gray.png");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
